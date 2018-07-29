@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="mystyle.css">
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		  ga('create', 'UA-80205027-1', 'auto');
+		  ga('send', 'pageview');
+		</script>
+	</head>
+
+	<body>
+		<div id="container">
+
+
+			<header>
+				<table>
+					<tr>
+					<td><img src="img/imgbeacon.png" height="130px"></td>
+					<td>
+						<h1>BLE Beacon Projects</h1>
+					</td>
+					</tr>
+				</table>
+			</header>
+
+			<div class="centered">
+				<div class="columns">
+					<div class="sectioncolumn" >
+						<section>
+							<br>
+							<h2> Projects </h2>
+
+							<br>
+							<table>
+								<tr>
+									<td valign="top"> <img style="border:1px solid LightGray" src="img/algo_overview.png" alt="SEUS" height="200px" width="180px"></td>
+									<td></td>
+									<td valign="top">
+									<p>
+									<b>Binary Image Beacon</b> This paper describes the first ‘image beacon’ systemthat is capable of broadcasting binary images over a verylong period (years, as opposed to days or weeks) using a set ofcheap, low-power, memory-constrained Bluetooth Low Energy(BLE) beacon devices. We design a patch-based image encodingalgorithm to produce encoded images of reasonably high quality,having sizes of as low as 16 bytes – without any prior knowledgeof the test images. We test our system with different typesof images that contain hand-written alphanumeric characters,geometric shapes, and arbitrary binary images having complexshapes and curves. We empirically determine the tradeoffsbetween the system lifetime and the quality of broadcastedimages, and determine an optimal set of parameters for oursystem, under user-specified constraints such as the number ofavailable beacon devices, maximum latency, and life expectancy.We develop a smartphone application that takes an image anduser-requirements as inputs, shows previews of different qualityoutput images, writes the encoded image into a set of beacons,and reads the broadcasted image back. Our evaluation showsthat a set of 2–3 beacons is capable of broadcasting high-qualityimages (75%–90% structurally similar to original images) for ayear-long continuous broadcasting, and both the lifetime and theimage quality improve when more beacons are used.
+									</p>
+									</td>
+								</tr>
+							</table>
+							<br>
+
+							<br>
+							<table>
+								<tr>
+									<td valign="top"> <img style="border:1px solid LightGray" src="img/image_processing_process.png" alt="SEUS" height="110px" width="180px"></td>
+									<td></td>
+									<td valign="top">
+									<p>
+									<b>Color Image Beacon</b> This paper describes the first `image beacon' system that is capable of broadcasting color images over a very long period (years, as opposed to days or weeks) using a set of cheap, low-power, memory-constrained Bluetooth Low Energy (BLE) beacon devices. We design an image processing pipeline that takes into account the background and foreground information of an image and then applies an adaptive encoding method which priorities more important regions of an image during encoding, in order to achieve the best quality image under a very strict size limit. We test our system with different types of RGB images that contain indoor and outdoor objects, buildings, and road signs. We empirically determine the tradeoffs between the system lifetime and the quality of broadcasted images, and determine an optimal set of parameters for our system, under user-specified constraints such as the number of available beacon devices, maximum latency, and life expectancy. We develop a smartphone application that takes an image and user-requirements as inputs, shows previews of different quality output images, writes the encoded image into a set of beacons, and reads the broadcasted image back. Our evaluation shows that a set of 2--3 beacons is capable of broadcasting high-quality images (70\% structurally similar to original images) for a year-long continuous broadcasting, and both the lifetime and the image quality improve when more beacons are used.  <a href="paper/soundsifter-mobisys2017.pdf" target="_blank" style="text-decoration: none"> [MOBISYS'17]</a>
+									</p>
+									</td>
+								</tr>
+							</table>
+							<br>
+
+							<br>
+							<table>
+								<tr>
+									<td valign="top"> <img style="border:1px solid LightGray" src="img/overview.png" alt="AHU" height="60px" width="180px"></td>
+									<td></td>
+									<td valign="top">
+									<p>
+									<b>Deep Beacon</b> This paper describes \emph{\Sys} which uses a set of cheap, low-power, storage-constrained Bluetooth Low Energy (BLE) devices to beacon (i.e. broadcast) a color image over a very long period (months, as opposed to days or weeks). The system employs deep neural network image encoder to encode a given input image and generates an extremely compact representation (as small as 10 bytes) of the image. At the receiver end, another deep neural network decoder runs on a mobile device which decodes (i.e. generates) the original image from the BLE broadcast messages. We evaluate \Sys's performance using hand-written digit images and different types of RGB images that contain objects such as birds, flowers, and traffic signs. We empirically determine the tradeoffs between the system lifetime and the quality of broadcast images, and determine an optimal set of parameters for our system, under user-specified constraints such as the number of available beacon devices, maximum latency, and life expectancy. We develop a smartphone application that takes an image and user-requirements as inputs, shows previews of different quality output images, writes the encoded image into a set of beacons, and reads the broadcasted image back. Our evaluation shows that one beacon device is capable of broadcasting high-quality images (90\% structurally similar to original images) for a year-long continuous broadcasting, and both the lifetime and the image quality improve when two beacons are used.
+									</p>
+									</td>
+								</tr>
+							</table>
+							<br>
+
+							<br>
+							<table>
+								<tr>
+									<td valign="top"> <img style="border:1px solid LightGray" src="img/fig1.png" alt="SEUS" height="75px" width="180px"></td>
+									<td></td>
+									<td valign="top">
+									<p>
+									<b>MARBLE</b> This paper describes \Sys, which is a mobile augmented reality system that uses a cluster of off-the-shelf, low power, storage and bandwidth constrained Bluetooth Low Energy (BLE) beacons as an infrastructure. \Sys efficiently stores and broadcasts minimal visual information of 3D objects and help localize a mobile viewer, who receives, renders, and experiences those 3D virtual objects while walking in the environment, wearing an augmented reality headset or viewing it through a smartphone. Compared to other common indoor AR systems, \Sys consumes less computation resource, stores and broadcasts 3D objects and shapes data over a very long period, does not require a pre-defined texture pattern to be placed in the scene for camera pose estimation, and is less sensitive to camera capture quality. We conduct a user study to demonstrate that \Sys is capable of capturing freehand gestures, and when replayed back, a user sees a virtual avatar performing the gestures in the 3D environment in real-time.
+									</p>
+									</td>
+								</tr>
+							</table>
+							<br>
+
+						</section>
+				</div>
+				<div class="clear"></div>
+			</div>
+
+
+
+			<footer>
+				<p style="text-align:center">Last update: July 2018</p>
+			</footer>
+
+		</div>
+	</body>
+</html>
